@@ -1,0 +1,17 @@
+$src1 = "\\LABANU\PERSO\"
+$src2 = "\\LABANU\EQUIPES\"
+$dst = "C:\BACKUPS\"
+
+while ($true) {
+    $time = (Get-Date).ToString("yyyyMMdd-HHmm")
+    $backup_path = Join-Path -Path $dst -ChildPath $time
+    New-Item -ItemType Directory -Path $backup_path -Force
+
+    Robocopy $src1 "$backup_path\PERSO" /E /MIR
+    Robocopy $src2 "$backup_path\EQUIPE" /E /MIR
+
+    $delete_before = (Get-Date).AddDays(-7)
+    Get-ChildItem $dst | Where-Object {$_.LastWriteTime -lt $delete_before} | Remove-Item -Recurse -Force
+
+    Start-Sleep -Seconds 3600
+}
