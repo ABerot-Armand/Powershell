@@ -60,9 +60,8 @@ foreach ($add_personnel in $CSVData) {
     # - HomeDrive : Lettre du lecteur réseau attribuée (M:)
     # - HomeDirectory : Répertoire réseau personnel du nom de l'utilisateur
     # - ScriptPath : Chemin du script de connexion (loginQualite.bat)
-    # - AccountExpirationDate : Date d'expiration du compte (6 mois à partir de la date actuelle)
 
-    New-ADUser -Name "$Nom" -Path "OU=CLINIQUE,DC=AKAT,DC=FR" -Enabled $true -AccountPassword (ConvertTo-SecureString -AsPlainText "Secret123" -Force) -DisplayName "$Prenom $Nom" -GivenName "$Prenom" -Surname "$Nom" -HomeDrive "M:" -HomeDirectory "\\LABANU\PERSO\$Nom" -ScriptPath "loginQualite.bat" -AccountExpirationDate ((Get-Date).AddMonths(6))
+    New-ADUser -Name "$Nom" -Path "OU=CLINIQUE,DC=AKAT,DC=FR" -Enabled $true -AccountPassword (ConvertTo-SecureString -AsPlainText "Secret123" -Force) -DisplayName "$Prenom $Nom" -GivenName "$Prenom" -Surname "$Nom" -HomeDrive "M:" -HomeDirectory "\\LABANU\PERSO\$Nom" -ScriptPath "loginQualite.bat"
 
     # Ajoutez l'utilisateur au groupe correspondant
     Add-ADGroupMember -Identity "CN=$Equipe,OU=CLINIQUE,DC=AKAT,DC=FR" -Members "$Nom"
