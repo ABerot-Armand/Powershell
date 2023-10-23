@@ -9,8 +9,8 @@ while ($true){
     New-Item -ItemType Directory -Path $backup_path
 
     # Copiez les dossiers sources dans le répertoire de sauvegarde
-    Robocopy "$src1" "$backup_path" /E /MIR
-    Robocopy "$src2" "$backup_path" /E /MIR
+    Robocopy "$src1" "$backup_path\PERSO" /E /MIR
+    Robocopy "$src2" "$backup_path\EQUIPES" /E /MIR
 
     $delete_before = (Get-Date).AddDays(-7)
     
