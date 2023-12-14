@@ -1,41 +1,5 @@
-Nom;Prenom;Service
-Doe;John;Chirurgie générale
-Smith;Jane;Cardiologie
-Martin;David;Chirurgie orthopédique
-Brown;Emma;Urgences
-Johnson;Michael;Pédiatrie
-Williams;Olivia;Radiologie
-Jones;Daniel;Psychiatrie
-Garcia;Sophia;Ophtalmologie
-Miller;Joseph;Soins intensifs
-Davis;Chloe;Radiologie pédiatrique
-Hernandez;Matthew;Chirurgie générale
-Martinez;Emily;Cardiologie
-Jackson;Ethan;Chirurgie orthopédique
-Taylor;Isabella;Urgences
-Anderson;Aiden;Pédiatrie
-Thomas;Mia;Radiologie
-Moore;Noah;Psychiatrie
-White;Ava;Ophtalmologie
-Harris;James;Soins intensifs
-Clark;Sophie;Radiologie pédiatrique
-Lewis;Lucas;Chirurgie générale
-Lee;Ella;Cardiologie
-Walker;Liam;Chirurgie orthopédique
-Hall;Lily;Urgences
-Young;Benjamin;Pédiatrie
-Allen;Avery;Radiologie
-Wright;Harper;Psychiatrie
-King;Samuel;Ophtalmologie
-Scott;Scarlett;Soins intensifs
-Baker;Dylan;Radiologie pédiatrique
-Adams;Grace;Chirurgie générale
-Nelson;Leo;Cardiologie
-Hill;Zoe;Chirurgie orthopédique
-Ramirez;Jack;Urgences
-Campbell;Ellie;Pédiatrie
-Mitchell;Connor;Radiologie
-Roberts;Victoria;Psychiatrie
-Turner;Gabriel;Ophtalmologie
-Phillips;Aria;Soins intensifs
-Cooper;Caleb;Radiologie pédiatrique
+Prénom,Nom,Login,AD group,email,Office Number
+Vincent,TIM,vtim,IT,vtim@wsl2024.org,1XX
+Ness,PRESSO,npresso,Direction,npresso@wsl2024.org,1XX
+Jean,TICIPE,jticipe,Factory,jticipe@wsl2024.org,1XX
+Rick,OLA,rola,Sales,rola@wsl2024.org,1XX
