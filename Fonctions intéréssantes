@@ -1,0 +1,17 @@
+################################### Fonction teste ###################################
+# Cette fonction prend un FilePath et vérifie qu'un fichier existe a cet emplacement #
+# Elle retourne le resultat en vert si il existe et en rouge s'il n'existe pas       #
+# Pratique pour tester la réussite ou non de plusieurs creation de fichier           #
+######################################################################################
+
+function Test-Fichier {
+    param (
+        [string]$FilePath
+    )
+
+    if (Test-Path $FilePath) {
+        Write-Host "Le fichier existe à l'emplacement : $FilePath" -ForegroundColor Green
+    } else {
+        Write-Host "Erreur : Le fichier n'a pas pu être trouvé à l'emplacement : $FilePath" -ForegroundColor Red
+    }
+}
